@@ -1,19 +1,17 @@
 function MajoritySweeper(arr) {
-    let hasil = [];
-    let munculTerbanyak = 0;
-    let banyakAngka = [];
+    let munculTerbanyak = [];
 
     for (let i = 0; i < arr.length; i++) {
         if (banyakAngka === arr[i]) {
             banyakAngka = arr[i].banyakAngka++;
-        }    
-    }
-    
-    for (let j = 0; j < banyakAngka.length; j++) {
-        if (banyakAngka[j] > munculTerbanyak) {
-            hasil = munculTerbanyak;
         }
-    
+        
+        for (let j = 0; j < banyakAngka.length; j++) {
+            if (banyakAngka[j] > munculTerbanyak) {
+                hasil = munculTerbanyak;
+            }
+        
+        }
     }
 
     return hasil;
