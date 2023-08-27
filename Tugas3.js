@@ -10,6 +10,7 @@ function MajoritySweeper(arr) {
         
         for (let j = 0; j < banyakAngka.length; j++) {
             if (banyakAngka[j] > munculTerbanyak) {
+                const hasil = [];
                 hasil = munculTerbanyak;
             }
         
