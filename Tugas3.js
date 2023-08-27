@@ -1,5 +1,7 @@
 function MajoritySweeper(arr) {
     let munculTerbanyak = [];
+    let banyakAngka = 0;
+
 
     for (let i = 0; i < arr.length; i++) {
         if (banyakAngka === arr[i]) {
@@ -14,7 +16,7 @@ function MajoritySweeper(arr) {
         }
     }
 
-    return hasil;
+    return munculTerbanyak;
 }
   
 // TEST CASES
